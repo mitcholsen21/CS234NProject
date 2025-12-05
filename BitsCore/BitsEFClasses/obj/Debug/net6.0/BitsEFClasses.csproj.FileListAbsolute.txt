@@ -1,0 +1,13 @@
+C:\Users\Mitcholsen\CS234N\Project\BitsCore\BitsEFClasses\bin\Debug\net6.0\mySqlSettings.json
+C:\Users\Mitcholsen\CS234N\Project\BitsCore\BitsEFClasses\bin\Debug\net6.0\BitsEFClasses.deps.json
+C:\Users\Mitcholsen\CS234N\Project\BitsCore\BitsEFClasses\bin\Debug\net6.0\BitsEFClasses.runtimeconfig.json
+C:\Users\Mitcholsen\CS234N\Project\BitsCore\BitsEFClasses\bin\Debug\net6.0\BitsEFClasses.dll
+C:\Users\Mitcholsen\CS234N\Project\BitsCore\BitsEFClasses\bin\Debug\net6.0\BitsEFClasses.pdb
+C:\Users\Mitcholsen\CS234N\Project\BitsCore\BitsEFClasses\obj\Debug\net6.0\BitsEFClasses.csproj.AssemblyReference.cache
+C:\Users\Mitcholsen\CS234N\Project\BitsCore\BitsEFClasses\obj\Debug\net6.0\BitsEFClasses.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Mitcholsen\CS234N\Project\BitsCore\BitsEFClasses\obj\Debug\net6.0\BitsEFClasses.csproj.CoreCompileInputs.cache
+C:\Users\Mitcholsen\CS234N\Project\BitsCore\BitsEFClasses\obj\Debug\net6.0\BitsEFClasses.dll
+C:\Users\Mitcholsen\CS234N\Project\BitsCore\BitsEFClasses\obj\Debug\net6.0\refint\BitsEFClasses.dll
+C:\Users\Mitcholsen\CS234N\Project\BitsCore\BitsEFClasses\obj\Debug\net6.0\BitsEFClasses.pdb
+C:\Users\Mitcholsen\CS234N\Project\BitsCore\BitsEFClasses\obj\Debug\net6.0\BitsEFClasses.genruntimeconfig.cache
+C:\Users\Mitcholsen\CS234N\Project\BitsCore\BitsEFClasses\obj\Debug\net6.0\ref\BitsEFClasses.dll
