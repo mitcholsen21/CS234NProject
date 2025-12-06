@@ -1,0 +1,7 @@
+C:\Users\Mitcholsen\CS234N\Project\BitsCore\obj\Debug\net6.0\BitsCore.csproj.AssemblyReference.cache
+C:\Users\Mitcholsen\CS234N\Project\BitsCore\obj\Debug\net6.0\rpswa.dswa.cache.json
+C:\Users\Mitcholsen\CS234N\Project\BitsCore\obj\Debug\net6.0\BitsCore.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Mitcholsen\CS234N\Project\BitsCore\obj\Debug\net6.0\BitsCore.csproj.CoreCompileInputs.cache
+C:\Users\Mitcholsen\CS234N\Project\BitsCore\obj\Debug\net6.0\BitsCore.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\Mitcholsen\CS234N\Project\BitsCore\obj\Debug\net6.0\BitsCore.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Mitcholsen\CS234N\Project\BitsCore\obj\Debug\net6.0\BitsCore.sourcelink.json

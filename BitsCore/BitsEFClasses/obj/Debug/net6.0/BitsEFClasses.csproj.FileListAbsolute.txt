@@ -6,6 +6,7 @@ C:\Users\Mitcholsen\CS234N\Project\BitsCore\BitsEFClasses\bin\Debug\net6.0\BitsE
 C:\Users\Mitcholsen\CS234N\Project\BitsCore\BitsEFClasses\obj\Debug\net6.0\BitsEFClasses.csproj.AssemblyReference.cache
 C:\Users\Mitcholsen\CS234N\Project\BitsCore\BitsEFClasses\obj\Debug\net6.0\BitsEFClasses.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\Mitcholsen\CS234N\Project\BitsCore\BitsEFClasses\obj\Debug\net6.0\BitsEFClasses.csproj.CoreCompileInputs.cache
+C:\Users\Mitcholsen\CS234N\Project\BitsCore\BitsEFClasses\obj\Debug\net6.0\BitsEFClasses.sourcelink.json
 C:\Users\Mitcholsen\CS234N\Project\BitsCore\BitsEFClasses\obj\Debug\net6.0\BitsEFClasses.dll
 C:\Users\Mitcholsen\CS234N\Project\BitsCore\BitsEFClasses\obj\Debug\net6.0\refint\BitsEFClasses.dll
 C:\Users\Mitcholsen\CS234N\Project\BitsCore\BitsEFClasses\obj\Debug\net6.0\BitsEFClasses.pdb

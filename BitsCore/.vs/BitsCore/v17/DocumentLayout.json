@@ -3,8 +3,44 @@
   "WorkspaceRootPath": "C:\\Users\\Mitcholsen\\CS234N\\Project\\BitsCore\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A6F67CBD-E5F5-47C2-B2C3-A8C4CE46A93F}|BitsTests\\BitsTests.csproj|c:\\users\\mitcholsen\\cs234n\\project\\bitscore\\bitstests\\ingredienttest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A6F67CBD-E5F5-47C2-B2C3-A8C4CE46A93F}|BitsTests\\BitsTests.csproj|solutionrelative:bitstests\\ingredienttest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{16C8352B-6DFA-4092-952C-1A8764AAF1D4}|BitsREST\\BitsREST.csproj|c:\\users\\mitcholsen\\cs234n\\project\\bitscore\\bitsrest\\controllers\\ingredientscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{16C8352B-6DFA-4092-952C-1A8764AAF1D4}|BitsREST\\BitsREST.csproj|solutionrelative:bitsrest\\controllers\\ingredientscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EFB881A5-E7A4-45D2-9AB4-EECF184024AD}|BitsCore.csproj|c:\\users\\mitcholsen\\cs234n\\project\\bitscore\\bitsrest\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EFB881A5-E7A4-45D2-9AB4-EECF184024AD}|BitsCore.csproj|solutionrelative:bitsrest\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EFB881A5-E7A4-45D2-9AB4-EECF184024AD}|BitsCore.csproj|c:\\users\\mitcholsen\\cs234n\\project\\bitscore\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EFB881A5-E7A4-45D2-9AB4-EECF184024AD}|BitsCore.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EFB881A5-E7A4-45D2-9AB4-EECF184024AD}|BitsCore.csproj|c:\\users\\mitcholsen\\cs234n\\project\\bitscore\\bitsrest\\obj\\debug\\net6.0\\bitsrest.mvcapplicationpartsassemblyinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EFB881A5-E7A4-45D2-9AB4-EECF184024AD}|BitsCore.csproj|solutionrelative:bitsrest\\obj\\debug\\net6.0\\bitsrest.mvcapplicationpartsassemblyinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EFB881A5-E7A4-45D2-9AB4-EECF184024AD}|BitsCore.csproj|c:\\users\\mitcholsen\\cs234n\\project\\bitscore\\bitsrest\\obj\\debug\\net6.0\\.netcoreapp,version=v6.0.assemblyattributes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EFB881A5-E7A4-45D2-9AB4-EECF184024AD}|BitsCore.csproj|solutionrelative:bitsrest\\obj\\debug\\net6.0\\.netcoreapp,version=v6.0.assemblyattributes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{16C8352B-6DFA-4092-952C-1A8764AAF1D4}|BitsREST\\BitsREST.csproj|c:\\users\\mitcholsen\\cs234n\\project\\bitscore\\bitsrest\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{16C8352B-6DFA-4092-952C-1A8764AAF1D4}|BitsREST\\BitsREST.csproj|solutionrelative:bitsrest\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{16C8352B-6DFA-4092-952C-1A8764AAF1D4}|BitsREST\\BitsREST.csproj|c:\\users\\mitcholsen\\cs234n\\project\\bitscore\\bitsrest\\bitsrest.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{16C8352B-6DFA-4092-952C-1A8764AAF1D4}|BitsREST\\BitsREST.csproj|solutionrelative:bitsrest\\bitsrest.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{16C8352B-6DFA-4092-952C-1A8764AAF1D4}|BitsREST\\BitsREST.csproj|c:\\users\\mitcholsen\\cs234n\\project\\bitscore\\bitsrest\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{16C8352B-6DFA-4092-952C-1A8764AAF1D4}|BitsREST\\BitsREST.csproj|solutionrelative:bitsrest\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EFB881A5-E7A4-45D2-9AB4-EECF184024AD}|BitsCore.csproj|c:\\users\\mitcholsen\\cs234n\\project\\bitscore\\bitsrest\\obj\\debug\\net6.0\\bitsrest.globalusings.g.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EFB881A5-E7A4-45D2-9AB4-EECF184024AD}|BitsCore.csproj|solutionrelative:bitsrest\\obj\\debug\\net6.0\\bitsrest.globalusings.g.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A6F67CBD-E5F5-47C2-B2C3-A8C4CE46A93F}|BitsTests\\BitsTests.csproj|c:\\users\\mitcholsen\\cs234n\\project\\bitscore\\bitstests\\bitstests.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{A6F67CBD-E5F5-47C2-B2C3-A8C4CE46A93F}|BitsTests\\BitsTests.csproj|solutionrelative:bitstests\\bitstests.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
       "AbsoluteMoniker": "D:0:0:{3A06A748-61E0-4C19-A987-63781A3ACC56}|BitsEFClasses\\BitsEFClasses.csproj|c:\\users\\mitcholsen\\cs234n\\project\\bitscore\\bitsefclasses\\configdb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -15,8 +51,8 @@
       "RelativeMoniker": "D:0:0:{3A06A748-61E0-4C19-A987-63781A3ACC56}|BitsEFClasses\\BitsEFClasses.csproj|solutionrelative:bitsefclasses\\models\\ingredient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A6F67CBD-E5F5-47C2-B2C3-A8C4CE46A93F}|BitsTests\\BitsTests.csproj|c:\\users\\mitcholsen\\cs234n\\project\\bitscore\\bitstests\\bitstests.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{A6F67CBD-E5F5-47C2-B2C3-A8C4CE46A93F}|BitsTests\\BitsTests.csproj|solutionrelative:bitstests\\bitstests.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+      "AbsoluteMoniker": "D:0:0:{A6F67CBD-E5F5-47C2-B2C3-A8C4CE46A93F}|BitsTests\\BitsTests.csproj|c:\\users\\mitcholsen\\cs234n\\project\\bitscore\\bitstests\\ingredienttest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A6F67CBD-E5F5-47C2-B2C3-A8C4CE46A93F}|BitsTests\\BitsTests.csproj|solutionrelative:bitstests\\ingredienttest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{EFB881A5-E7A4-45D2-9AB4-EECF184024AD}|BitsCore.csproj|c:\\users\\mitcholsen\\cs234n\\project\\bitscore\\bitscore.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
@@ -38,11 +74,125 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "IngredientsController.cs",
+              "DocumentMoniker": "C:\\Users\\Mitcholsen\\CS234N\\Project\\BitsCore\\BitsREST\\Controllers\\IngredientsController.cs",
+              "RelativeDocumentMoniker": "BitsREST\\Controllers\\IngredientsController.cs",
+              "ToolTip": "C:\\Users\\Mitcholsen\\CS234N\\Project\\BitsCore\\BitsREST\\Controllers\\IngredientsController.cs",
+              "RelativeToolTip": "BitsREST\\Controllers\\IngredientsController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-06T08:37:37.965Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Mitcholsen\\CS234N\\Project\\BitsCore\\BitsREST\\Program.cs",
+              "RelativeDocumentMoniker": "BitsREST\\Program.cs",
+              "ToolTip": "C:\\Users\\Mitcholsen\\CS234N\\Project\\BitsCore\\BitsREST\\Program.cs",
+              "RelativeToolTip": "BitsREST\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-06T08:33:08.463Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Mitcholsen\\CS234N\\Project\\BitsCore\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\Mitcholsen\\CS234N\\Project\\BitsCore\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-06T08:31:46.928Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "BitsREST.MvcApplicationPartsAssemblyInfo.cs",
+              "DocumentMoniker": "C:\\Users\\Mitcholsen\\CS234N\\Project\\BitsCore\\BitsREST\\obj\\Debug\\net6.0\\BitsREST.MvcApplicationPartsAssemblyInfo.cs",
+              "RelativeDocumentMoniker": "BitsREST\\obj\\Debug\\net6.0\\BitsREST.MvcApplicationPartsAssemblyInfo.cs",
+              "ToolTip": "C:\\Users\\Mitcholsen\\CS234N\\Project\\BitsCore\\BitsREST\\obj\\Debug\\net6.0\\BitsREST.MvcApplicationPartsAssemblyInfo.cs",
+              "RelativeToolTip": "BitsREST\\obj\\Debug\\net6.0\\BitsREST.MvcApplicationPartsAssemblyInfo.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-06T08:28:52.815Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "BitsREST.GlobalUsings.g.cs",
+              "DocumentMoniker": "C:\\Users\\Mitcholsen\\CS234N\\Project\\BitsCore\\BitsREST\\obj\\Debug\\net6.0\\BitsREST.GlobalUsings.g.cs",
+              "RelativeDocumentMoniker": "BitsREST\\obj\\Debug\\net6.0\\BitsREST.GlobalUsings.g.cs",
+              "ToolTip": "C:\\Users\\Mitcholsen\\CS234N\\Project\\BitsCore\\BitsREST\\obj\\Debug\\net6.0\\BitsREST.GlobalUsings.g.cs",
+              "RelativeToolTip": "BitsREST\\obj\\Debug\\net6.0\\BitsREST.GlobalUsings.g.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-06T08:28:47.838Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": ".NETCoreApp,Version=v6.0.AssemblyAttributes.cs",
+              "DocumentMoniker": "C:\\Users\\Mitcholsen\\CS234N\\Project\\BitsCore\\BitsREST\\obj\\Debug\\net6.0\\.NETCoreApp,Version=v6.0.AssemblyAttributes.cs",
+              "RelativeDocumentMoniker": "BitsREST\\obj\\Debug\\net6.0\\.NETCoreApp,Version=v6.0.AssemblyAttributes.cs",
+              "ToolTip": "C:\\Users\\Mitcholsen\\CS234N\\Project\\BitsCore\\BitsREST\\obj\\Debug\\net6.0\\.NETCoreApp,Version=v6.0.AssemblyAttributes.cs",
+              "RelativeToolTip": "BitsREST\\obj\\Debug\\net6.0\\.NETCoreApp,Version=v6.0.AssemblyAttributes.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-06T08:28:24.58Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "C:\\Users\\Mitcholsen\\CS234N\\Project\\BitsCore\\BitsREST\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "BitsREST\\Properties\\launchSettings.json",
+              "ToolTip": "C:\\Users\\Mitcholsen\\CS234N\\Project\\BitsCore\\BitsREST\\Properties\\launchSettings.json",
+              "RelativeToolTip": "BitsREST\\Properties\\launchSettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-12-06T08:27:45.593Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "BitsREST.csproj",
+              "DocumentMoniker": "C:\\Users\\Mitcholsen\\CS234N\\Project\\BitsCore\\BitsREST\\BitsREST.csproj",
+              "RelativeDocumentMoniker": "BitsREST\\BitsREST.csproj",
+              "ToolTip": "C:\\Users\\Mitcholsen\\CS234N\\Project\\BitsCore\\BitsREST\\BitsREST.csproj",
+              "RelativeToolTip": "BitsREST\\BitsREST.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-12-06T08:12:23.728Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\Mitcholsen\\CS234N\\Project\\BitsCore\\BitsREST\\appsettings.json",
+              "RelativeDocumentMoniker": "BitsREST\\appsettings.json",
+              "ToolTip": "C:\\Users\\Mitcholsen\\CS234N\\Project\\BitsCore\\BitsREST\\appsettings.json",
+              "RelativeToolTip": "BitsREST\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-12-06T08:07:17.278Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
               "Title": "Ingredient.cs",
               "DocumentMoniker": "C:\\Users\\Mitcholsen\\CS234N\\Project\\BitsCore\\BitsEFClasses\\Models\\Ingredient.cs",
               "RelativeDocumentMoniker": "BitsEFClasses\\Models\\Ingredient.cs",
@@ -50,12 +200,11 @@
               "RelativeToolTip": "BitsEFClasses\\Models\\Ingredient.cs",
               "ViewState": "AgIAAA0AAAAAAAAAAAAQwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-05T09:17:16.293Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-05T09:17:16.293Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 10,
               "Title": "ConfigDB.cs",
               "DocumentMoniker": "C:\\Users\\Mitcholsen\\CS234N\\Project\\BitsCore\\BitsEFClasses\\ConfigDB.cs",
               "RelativeDocumentMoniker": "BitsEFClasses\\ConfigDB.cs",
@@ -63,38 +212,35 @@
               "RelativeToolTip": "BitsEFClasses\\ConfigDB.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-05T09:14:59.5Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-05T09:14:59.5Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "BitsTests",
+              "DocumentIndex": 9,
+              "Title": "BitsTests.csproj",
               "DocumentMoniker": "C:\\Users\\Mitcholsen\\CS234N\\Project\\BitsCore\\BitsTests\\BitsTests.csproj",
               "RelativeDocumentMoniker": "BitsTests\\BitsTests.csproj",
               "ToolTip": "C:\\Users\\Mitcholsen\\CS234N\\Project\\BitsCore\\BitsTests\\BitsTests.csproj",
               "RelativeToolTip": "BitsTests\\BitsTests.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-12-05T09:04:26.573Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-05T09:04:26.573Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 12,
               "Title": "IngredientTest.cs",
               "DocumentMoniker": "C:\\Users\\Mitcholsen\\CS234N\\Project\\BitsCore\\BitsTests\\IngredientTest.cs",
               "RelativeDocumentMoniker": "BitsTests\\IngredientTest.cs",
               "ToolTip": "C:\\Users\\Mitcholsen\\CS234N\\Project\\BitsCore\\BitsTests\\IngredientTest.cs",
               "RelativeToolTip": "BitsTests\\IngredientTest.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAyAAAAAAAAAA==",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABMAAAAyAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-05T09:01:03.99Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-05T09:01:03.99Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 13,
               "Title": "BitsCore.csproj",
               "DocumentMoniker": "C:\\Users\\Mitcholsen\\CS234N\\Project\\BitsCore\\BitsCore.csproj",
               "RelativeDocumentMoniker": "BitsCore.csproj",
@@ -102,12 +248,11 @@
               "RelativeToolTip": "BitsCore.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-12-05T08:45:42.811Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-05T08:45:42.811Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 15,
               "Title": "IngredientTests.cs",
               "DocumentMoniker": "C:\\Users\\Mitcholsen\\CS234N\\Project\\BitsCore\\BitsTests\\IngredientTests.cs",
               "RelativeDocumentMoniker": "BitsTests\\IngredientTests.cs",
@@ -118,7 +263,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 14,
               "Title": "IngredientsTests.cs",
               "DocumentMoniker": "C:\\Users\\Mitcholsen\\CS234N\\Project\\BitsCore\\BitsTests\\IngredientsTests.cs",
               "RelativeDocumentMoniker": "BitsTests\\IngredientsTests.cs",

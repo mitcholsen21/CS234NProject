@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BitsEFClasses", "BitsEFClas
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BitsTests", "BitsTests\BitsTests.csproj", "{A6F67CBD-E5F5-47C2-B2C3-A8C4CE46A93F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BitsREST", "BitsREST\BitsREST.csproj", "{16C8352B-6DFA-4092-952C-1A8764AAF1D4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{A6F67CBD-E5F5-47C2-B2C3-A8C4CE46A93F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A6F67CBD-E5F5-47C2-B2C3-A8C4CE46A93F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A6F67CBD-E5F5-47C2-B2C3-A8C4CE46A93F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{16C8352B-6DFA-4092-952C-1A8764AAF1D4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{16C8352B-6DFA-4092-952C-1A8764AAF1D4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{16C8352B-6DFA-4092-952C-1A8764AAF1D4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{16C8352B-6DFA-4092-952C-1A8764AAF1D4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

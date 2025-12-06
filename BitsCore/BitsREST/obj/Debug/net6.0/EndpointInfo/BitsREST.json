@@ -1,0 +1,2068 @@
+{
+  "openapi": "3.0.1",
+  "info": {
+    "title": "BitsREST",
+    "version": "1.0"
+  },
+  "paths": {
+    "/api/Ingredients": {
+      "get": {
+        "tags": [
+          "Ingredients"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Ingredient"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Ingredient"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Ingredient"
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "Ingredients"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Ingredient"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Ingredient"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/Ingredient"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/Ingredient"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Ingredient"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Ingredient"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Ingredients/{id}": {
+      "get": {
+        "tags": [
+          "Ingredients"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/Ingredient"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Ingredient"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Ingredient"
+                }
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "Ingredients"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Ingredient"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Ingredient"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/Ingredient"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "Ingredients"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "Account": {
+        "type": "object",
+        "properties": {
+          "accountId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "name": {
+            "type": "string",
+            "nullable": true
+          },
+          "address": {
+            "type": "string",
+            "nullable": true
+          },
+          "city": {
+            "type": "string",
+            "nullable": true
+          },
+          "state": {
+            "type": "string",
+            "nullable": true
+          },
+          "zipcode": {
+            "type": "string",
+            "nullable": true
+          },
+          "phone": {
+            "type": "string",
+            "nullable": true
+          },
+          "contactName": {
+            "type": "string",
+            "nullable": true
+          },
+          "salesPersonName": {
+            "type": "string",
+            "nullable": true
+          },
+          "inventoryTransactions": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/InventoryTransaction"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "Address": {
+        "type": "object",
+        "properties": {
+          "addressId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "streetLine1": {
+            "type": "string",
+            "nullable": true
+          },
+          "streetLine2": {
+            "type": "string",
+            "nullable": true
+          },
+          "city": {
+            "type": "string",
+            "nullable": true
+          },
+          "state": {
+            "type": "string",
+            "nullable": true
+          },
+          "zipcode": {
+            "type": "string",
+            "nullable": true
+          },
+          "country": {
+            "type": "string",
+            "nullable": true
+          },
+          "supplierAddresses": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/SupplierAddress"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "AddressType": {
+        "type": "object",
+        "properties": {
+          "addressTypeId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "name": {
+            "type": "string",
+            "nullable": true
+          },
+          "supplierAddresses": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/SupplierAddress"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "Adjunct": {
+        "type": "object",
+        "properties": {
+          "ingredientId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "adjunctTypeId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "useFor": {
+            "type": "string",
+            "nullable": true
+          },
+          "recommendedQuantity": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "batchVolume": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "recommendedUseDuringId": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "adjunctType": {
+            "$ref": "#/components/schemas/AdjunctType"
+          },
+          "ingredient": {
+            "$ref": "#/components/schemas/Ingredient"
+          },
+          "recommendedUseDuring": {
+            "$ref": "#/components/schemas/UseDuring"
+          }
+        },
+        "additionalProperties": false
+      },
+      "AdjunctType": {
+        "type": "object",
+        "properties": {
+          "adjunctTypeId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "name": {
+            "type": "string",
+            "nullable": true
+          },
+          "adjuncts": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Adjunct"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "AppUser": {
+        "type": "object",
+        "properties": {
+          "appUserId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "name": {
+            "type": "string",
+            "nullable": true
+          },
+          "inventoryTransactions": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/InventoryTransaction"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "Barrel": {
+        "type": "object",
+        "properties": {
+          "brewContainerId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "treatment": {
+            "type": "string",
+            "nullable": true
+          },
+          "brewContainer": {
+            "$ref": "#/components/schemas/BrewContainer"
+          }
+        },
+        "additionalProperties": false
+      },
+      "Batch": {
+        "type": "object",
+        "properties": {
+          "batchId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "recipeId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "equipmentId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "volume": {
+            "type": "number",
+            "format": "double"
+          },
+          "scheduledStartDate": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "startDate": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "estimatedFinishDate": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "finishDate": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "unitCost": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "notes": {
+            "type": "string",
+            "nullable": true
+          },
+          "tasteNotes": {
+            "type": "string",
+            "nullable": true
+          },
+          "tasteRating": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "og": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "fg": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "carbonation": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "fermentationStages": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "primaryAge": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "primaryTemp": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "secondaryAge": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "secondaryTemp": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "tertiaryAge": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "age": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "temp": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "ibu": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "ibuMethod": {
+            "type": "string",
+            "nullable": true
+          },
+          "abv": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "actualEfficiency": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "calories": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "carbonationUsed": {
+            "type": "string",
+            "nullable": true
+          },
+          "forcedCarbonation": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "kegPrimingFactor": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "carbonationTemp": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "equipment": {
+            "$ref": "#/components/schemas/Equipment"
+          },
+          "recipe": {
+            "$ref": "#/components/schemas/Recipe"
+          },
+          "batchContainers": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/BatchContainer"
+            },
+            "nullable": true
+          },
+          "ingredientInventorySubtractions": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/IngredientInventorySubtraction"
+            },
+            "nullable": true
+          },
+          "inventoryTransactions": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/InventoryTransaction"
+            },
+            "nullable": true
+          },
+          "products": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Product"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "BatchContainer": {
+        "type": "object",
+        "properties": {
+          "batchId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "brewContainerId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "dateIn": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "dateOut": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "volume": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "batch": {
+            "$ref": "#/components/schemas/Batch"
+          },
+          "brewContainer": {
+            "$ref": "#/components/schemas/BrewContainer"
+          }
+        },
+        "additionalProperties": false
+      },
+      "BrewContainer": {
+        "type": "object",
+        "properties": {
+          "brewContainerId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "name": {
+            "type": "string",
+            "nullable": true
+          },
+          "containerStatusId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "containerTypeId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "containerSizeId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "containerSize": {
+            "$ref": "#/components/schemas/ContainerSize"
+          },
+          "containerStatus": {
+            "$ref": "#/components/schemas/ContainerStatus"
+          },
+          "containerType": {
+            "$ref": "#/components/schemas/ContainerType"
+          },
+          "barrel": {
+            "$ref": "#/components/schemas/Barrel"
+          },
+          "batchContainers": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/BatchContainer"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "ContainerSize": {
+        "type": "object",
+        "properties": {
+          "containerSizeId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "name": {
+            "type": "string",
+            "nullable": true
+          },
+          "maxVolume": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "workingVolume": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "brewContainers": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/BrewContainer"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "ContainerStatus": {
+        "type": "object",
+        "properties": {
+          "containerStatusId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "name": {
+            "type": "string",
+            "nullable": true
+          },
+          "brewContainers": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/BrewContainer"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "ContainerType": {
+        "type": "object",
+        "properties": {
+          "containerTypeId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "name": {
+            "type": "string",
+            "nullable": true
+          },
+          "brewContainers": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/BrewContainer"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "Equipment": {
+        "type": "object",
+        "properties": {
+          "equipmentId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "name": {
+            "type": "string",
+            "nullable": true
+          },
+          "version": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "boilSize": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "batchSize": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "tunVolume": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "tunWeight": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "tunSpecificHeat": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "topUpWater": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "trubChillerLoss": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "evapRate": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "boilTime": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "calcBoilVolume": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "lauterDeadspace": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "topUpKettle": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "hopUtilization": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "coolingLossPct": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "notes": {
+            "type": "string",
+            "nullable": true
+          },
+          "batches": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Batch"
+            },
+            "nullable": true
+          },
+          "recipes": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Recipe"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "Fermentable": {
+        "type": "object",
+        "properties": {
+          "ingredientId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "fermentableTypeId": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "color": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "yield": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "origin": {
+            "type": "string",
+            "nullable": true
+          },
+          "coarseFineDiff": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "moisture": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "diastaticPower": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "protein": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "maxInBatch": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "recommendMash": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "addAfterBoil": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "ibuGalPerLb": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "potential": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "fermentableType": {
+            "$ref": "#/components/schemas/FermentableType"
+          },
+          "ingredient": {
+            "$ref": "#/components/schemas/Ingredient"
+          }
+        },
+        "additionalProperties": false
+      },
+      "FermentableType": {
+        "type": "object",
+        "properties": {
+          "fermentableTypeId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "name": {
+            "type": "string",
+            "nullable": true
+          },
+          "fermentables": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Fermentable"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "Hop": {
+        "type": "object",
+        "properties": {
+          "ingredientId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "hopTypeId": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "origin": {
+            "type": "string",
+            "nullable": true
+          },
+          "alpha": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "beta": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "hsi": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "form": {
+            "type": "string",
+            "nullable": true
+          },
+          "hopType": {
+            "$ref": "#/components/schemas/HopType"
+          },
+          "ingredient": {
+            "$ref": "#/components/schemas/Ingredient"
+          }
+        },
+        "additionalProperties": false
+      },
+      "HopType": {
+        "type": "object",
+        "properties": {
+          "hopTypeId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "name": {
+            "type": "string",
+            "nullable": true
+          },
+          "hops": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Hop"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "Ingredient": {
+        "type": "object",
+        "properties": {
+          "ingredientId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "name": {
+            "type": "string",
+            "nullable": true
+          },
+          "version": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "ingredientTypeId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "onHandQuantity": {
+            "type": "number",
+            "format": "double"
+          },
+          "unitTypeId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "unitCost": {
+            "type": "number",
+            "format": "double"
+          },
+          "reorderPoint": {
+            "type": "number",
+            "format": "double"
+          },
+          "notes": {
+            "type": "string",
+            "nullable": true
+          },
+          "ingredientType": {
+            "$ref": "#/components/schemas/IngredientType"
+          },
+          "unitType": {
+            "$ref": "#/components/schemas/UnitType"
+          },
+          "adjunct": {
+            "$ref": "#/components/schemas/Adjunct"
+          },
+          "fermentable": {
+            "$ref": "#/components/schemas/Fermentable"
+          },
+          "hop": {
+            "$ref": "#/components/schemas/Hop"
+          },
+          "yeast": {
+            "$ref": "#/components/schemas/Yeast"
+          },
+          "ingredientInventoryAdditions": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/IngredientInventoryAddition"
+            },
+            "nullable": true
+          },
+          "ingredientInventorySubtractions": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/IngredientInventorySubtraction"
+            },
+            "nullable": true
+          },
+          "recipeIngredients": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/RecipeIngredient"
+            },
+            "nullable": true
+          },
+          "ingredients": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Ingredient"
+            },
+            "nullable": true
+          },
+          "styles": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Style"
+            },
+            "nullable": true
+          },
+          "substituteIngredients": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Ingredient"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "IngredientInventoryAddition": {
+        "type": "object",
+        "properties": {
+          "ingredientInventoryAdditionId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "ingredientId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "orderDate": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "estimatedDeliveryDate": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "transactionDate": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "supplierId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "quantity": {
+            "type": "number",
+            "format": "double"
+          },
+          "quantityRemaining": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "unitCost": {
+            "type": "number",
+            "format": "double"
+          },
+          "ingredient": {
+            "$ref": "#/components/schemas/Ingredient"
+          },
+          "supplier": {
+            "$ref": "#/components/schemas/Supplier"
+          }
+        },
+        "additionalProperties": false
+      },
+      "IngredientInventorySubtraction": {
+        "type": "object",
+        "properties": {
+          "ingredientInventorySubtractionId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "ingredientId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "transactionDate": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "reason": {
+            "type": "string",
+            "nullable": true
+          },
+          "batchId": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "quantity": {
+            "type": "number",
+            "format": "double"
+          },
+          "batch": {
+            "$ref": "#/components/schemas/Batch"
+          },
+          "ingredient": {
+            "$ref": "#/components/schemas/Ingredient"
+          }
+        },
+        "additionalProperties": false
+      },
+      "IngredientType": {
+        "type": "object",
+        "properties": {
+          "ingredientTypeId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "name": {
+            "type": "string",
+            "nullable": true
+          },
+          "ingredients": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Ingredient"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "InventoryTransaction": {
+        "type": "object",
+        "properties": {
+          "inventoryTransactionId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "productContainerSizeId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "batchId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "inventoryTransactionDate": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "inventoryTransctionTypeId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "quantity": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "accountId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "appUserId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "notes": {
+            "type": "string",
+            "nullable": true
+          },
+          "account": {
+            "$ref": "#/components/schemas/Account"
+          },
+          "appUser": {
+            "$ref": "#/components/schemas/AppUser"
+          },
+          "batch": {
+            "$ref": "#/components/schemas/Batch"
+          },
+          "inventoryTransctionType": {
+            "$ref": "#/components/schemas/InventoryTransactionType"
+          },
+          "productContainerSize": {
+            "$ref": "#/components/schemas/ProductContainerSize"
+          }
+        },
+        "additionalProperties": false
+      },
+      "InventoryTransactionType": {
+        "type": "object",
+        "properties": {
+          "inventoryTransactionTypeId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "name": {
+            "type": "string",
+            "nullable": true
+          },
+          "inventoryTransactions": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/InventoryTransaction"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "Mash": {
+        "type": "object",
+        "properties": {
+          "mashId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "name": {
+            "type": "string",
+            "nullable": true
+          },
+          "version": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "grainTemp": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "tunTemp": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "spargeTemp": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "ph": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "tunWeight": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "tunSpecificHeat": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "equipmentAdjust": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "notes": {
+            "type": "string",
+            "nullable": true
+          },
+          "mashSteps": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/MashStep"
+            },
+            "nullable": true
+          },
+          "recipes": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Recipe"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "MashStep": {
+        "type": "object",
+        "properties": {
+          "mashStepId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "mashId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "name": {
+            "type": "string",
+            "nullable": true
+          },
+          "version": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "type": {
+            "type": "string",
+            "nullable": true
+          },
+          "infuseAmount": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "stepTime": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "stepTemp": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "rampTime": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "endTemp": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "description": {
+            "type": "string",
+            "nullable": true
+          },
+          "waterGrainRatio": {
+            "type": "string",
+            "nullable": true
+          },
+          "decoctionAmount": {
+            "type": "string",
+            "nullable": true
+          },
+          "infuseTemp": {
+            "type": "string",
+            "nullable": true
+          },
+          "mash": {
+            "$ref": "#/components/schemas/Mash"
+          }
+        },
+        "additionalProperties": false
+      },
+      "Product": {
+        "type": "object",
+        "properties": {
+          "batchId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "productContainerSizeId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "rackedDate": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "sellByDate": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "quantityRacked": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "quantityRemaining": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "ingredientCost": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "suggestedPrice": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "batch": {
+            "$ref": "#/components/schemas/Batch"
+          },
+          "productContainerSize": {
+            "$ref": "#/components/schemas/ProductContainerSize"
+          }
+        },
+        "additionalProperties": false
+      },
+      "ProductContainerInventory": {
+        "type": "object",
+        "properties": {
+          "containerSizeId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "quantityDirty": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "quantityClean": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "containerSize": {
+            "$ref": "#/components/schemas/ProductContainerSize"
+          }
+        },
+        "additionalProperties": false
+      },
+      "ProductContainerSize": {
+        "type": "object",
+        "properties": {
+          "containerSizeId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "name": {
+            "type": "string",
+            "nullable": true
+          },
+          "volume": {
+            "type": "number",
+            "format": "double"
+          },
+          "itemQuantity": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "productContainerInventory": {
+            "$ref": "#/components/schemas/ProductContainerInventory"
+          },
+          "inventoryTransactions": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/InventoryTransaction"
+            },
+            "nullable": true
+          },
+          "products": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Product"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "Recipe": {
+        "type": "object",
+        "properties": {
+          "recipeId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "name": {
+            "type": "string",
+            "nullable": true
+          },
+          "version": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "date": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "styleId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "volume": {
+            "type": "number",
+            "format": "double"
+          },
+          "brewer": {
+            "type": "string",
+            "nullable": true
+          },
+          "boilTime": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "boilVolume": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "efficiency": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "fermentationStages": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "estimatedOg": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "estimatedFg": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "estimatedColor": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "estimatedAbv": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "actualEfficiency": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "equipmentId": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "carbonationUsed": {
+            "type": "string",
+            "nullable": true
+          },
+          "forcedCarbonation": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "kegPrimingFactor": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "carbonationTemp": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "mashId": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "equipment": {
+            "$ref": "#/components/schemas/Equipment"
+          },
+          "mash": {
+            "$ref": "#/components/schemas/Mash"
+          },
+          "style": {
+            "$ref": "#/components/schemas/Style"
+          },
+          "batches": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Batch"
+            },
+            "nullable": true
+          },
+          "recipeIngredients": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/RecipeIngredient"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "RecipeIngredient": {
+        "type": "object",
+        "properties": {
+          "recipeIngredientId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "recipeId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "ingredientId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "quantity": {
+            "type": "number",
+            "format": "double"
+          },
+          "time": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "useDuringId": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "ingredient": {
+            "$ref": "#/components/schemas/Ingredient"
+          },
+          "recipe": {
+            "$ref": "#/components/schemas/Recipe"
+          },
+          "useDuring": {
+            "$ref": "#/components/schemas/UseDuring"
+          }
+        },
+        "additionalProperties": false
+      },
+      "Style": {
+        "type": "object",
+        "properties": {
+          "styleId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "name": {
+            "type": "string",
+            "nullable": true
+          },
+          "version": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "categoryName": {
+            "type": "string",
+            "nullable": true
+          },
+          "categoryNumber": {
+            "type": "string",
+            "nullable": true
+          },
+          "categoryLetter": {
+            "type": "string",
+            "nullable": true
+          },
+          "styleGuide": {
+            "type": "string",
+            "nullable": true
+          },
+          "type": {
+            "type": "string",
+            "nullable": true
+          },
+          "ogMin": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "ogMax": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "fgMin": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "fgMax": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "ibuMin": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "ibuMax": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "colorMin": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "colorMax": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "carbMin": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "carbMax": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "abvMin": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "abvMax": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "notes": {
+            "type": "string",
+            "nullable": true
+          },
+          "profile": {
+            "type": "string",
+            "nullable": true
+          },
+          "ingredients": {
+            "type": "string",
+            "nullable": true
+          },
+          "examples": {
+            "type": "string",
+            "nullable": true
+          },
+          "recipes": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Recipe"
+            },
+            "nullable": true
+          },
+          "ingredientsNavigation": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Ingredient"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "Supplier": {
+        "type": "object",
+        "properties": {
+          "supplierId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "name": {
+            "type": "string",
+            "nullable": true
+          },
+          "phone": {
+            "type": "string",
+            "nullable": true
+          },
+          "email": {
+            "type": "string",
+            "nullable": true
+          },
+          "website": {
+            "type": "string",
+            "nullable": true
+          },
+          "contactFirstName": {
+            "type": "string",
+            "nullable": true
+          },
+          "contactLastName": {
+            "type": "string",
+            "nullable": true
+          },
+          "contactPhone": {
+            "type": "string",
+            "nullable": true
+          },
+          "contactEmail": {
+            "type": "string",
+            "nullable": true
+          },
+          "note": {
+            "type": "string",
+            "nullable": true
+          },
+          "ingredientInventoryAdditions": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/IngredientInventoryAddition"
+            },
+            "nullable": true
+          },
+          "supplierAddresses": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/SupplierAddress"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "SupplierAddress": {
+        "type": "object",
+        "properties": {
+          "supplierId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "addressId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "addressTypeId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "address": {
+            "$ref": "#/components/schemas/Address"
+          },
+          "addressType": {
+            "$ref": "#/components/schemas/AddressType"
+          },
+          "supplier": {
+            "$ref": "#/components/schemas/Supplier"
+          }
+        },
+        "additionalProperties": false
+      },
+      "UnitType": {
+        "type": "object",
+        "properties": {
+          "unitTypeId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "name": {
+            "type": "string",
+            "nullable": true
+          },
+          "ingredients": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Ingredient"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "UseDuring": {
+        "type": "object",
+        "properties": {
+          "useDuringId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "name": {
+            "type": "string",
+            "nullable": true
+          },
+          "adjuncts": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Adjunct"
+            },
+            "nullable": true
+          },
+          "recipeIngredients": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/RecipeIngredient"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "Yeast": {
+        "type": "object",
+        "properties": {
+          "ingredientId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "productId": {
+            "type": "string",
+            "nullable": true
+          },
+          "minTemp": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "maxTemp": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "form": {
+            "type": "string",
+            "nullable": true
+          },
+          "laboratory": {
+            "type": "string",
+            "nullable": true
+          },
+          "flocculation": {
+            "type": "string",
+            "nullable": true
+          },
+          "attenuation": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "maxReuse": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "addToSecondary": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "type": {
+            "type": "string",
+            "nullable": true
+          },
+          "bestFor": {
+            "type": "string",
+            "nullable": true
+          },
+          "ingredient": {
+            "$ref": "#/components/schemas/Ingredient"
+          }
+        },
+        "additionalProperties": false
+      }
+    }
+  }
+}
